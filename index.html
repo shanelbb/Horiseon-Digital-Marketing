@@ -136,14 +136,15 @@
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
     </footer>
     <script>
+      // select elements needed for events
       const menuBar = document.querySelector('.bars');
       const navBar = document.querySelector('.menu ul');
-      const navLinks = document.querySelectorAll('.menu ul li');
-      console.log(navLinks);
+      // toggles the nav menu open and closed when hamburger menu is clicked
       menuBar.addEventListener('click', () => {
         navBar.classList.toggle('open');
       });
 
+      // toggles menu closed when a link is clicked
       navBar.addEventListener('click', () => {
         navBar.classList.toggle('open');
       });
