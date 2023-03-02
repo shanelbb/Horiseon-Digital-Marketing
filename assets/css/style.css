@@ -41,6 +41,8 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+
+/* CSS for hamburger menu on mobile */
 .bars {
     position: absolute;
     right: 30px;
