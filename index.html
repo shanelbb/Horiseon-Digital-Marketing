@@ -7,13 +7,16 @@
   </head>
 
   <body>
+    <!-- Header : Start -->
     <header class="header">
       <h1>Hori<span class="seo">seo</span>n</h1>
+      <!-- Hamburger menu icon: Only displays on screen widths lower than 600px -->
       <div class="bars">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- Header bar navigation -->
       <nav class="menu">
         <ul>
           <li>
@@ -30,9 +33,16 @@
         </ul>
       </nav>
     </header>
+    <!-- Header : End -->
+
+    <!-- Main Content : Start -->
     <main>
+      <!-- Hero Image -->
       <div class="hero"></div>
+
+      <!-- Services section -->
       <section class="content">
+        <!-- Container for articles to help with CSS Grid styling -->
         <div class="articles">
           <article
             id="search-engine-optimization"
@@ -131,10 +141,16 @@
         </aside>
       </section>
     </main>
+    <!-- Main Content : Ends -->
+
+    <!-- Footer Content : Starts -->
     <footer class="footer">
       <h2>Made with ❤️️ by Horiseon</h2>
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
     </footer>
+    <!-- Footer Content : Ends -->
+
+    <!-- Script for hamburger menu functionality -->
     <script>
       // select elements needed for events
       const menuBar = document.querySelector('.bars');

@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,11 +7,28 @@
 
 body {
     background-color: #d9dcd6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header {
-    padding: 20px;
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+header, footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Section Styles */
+
+/* Header bar styles */
+header {
+    padding: 20px;
     background-color: #2a607c;
     color: #ffffff;
     display: flex;
@@ -18,31 +36,31 @@ body {
     position: relative;
 }
 
-.header h1 {
+header h1 {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+/* Gives the SEO in Horiseon a different colour */
+header h1 .seo {
+    color: #abedff;
 }
 
-.header nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* CSS for hamburger menu on mobile */
+/* CSS for hamburger menu on mobile. Not displayed until under 600px screen width. */
 .bars {
     position: absolute;
     right: 30px;
@@ -57,15 +75,7 @@ body {
     margin-bottom: 5px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
+/* Main section styles */
 .hero {
     height: 800px;
     width: 100%;
@@ -75,22 +85,7 @@ p {
     background-position: center;
 }
 
-article {
-    display: flex;
-    height: auto;
-    padding: 50px;
-}
-
-article img {
-    width: 30%;
-    object-fit: cover;
-}
-
-.articleText {
-    padding-left: 20px;
-    width: 70%;
-}
-
+/* Webpage content container */
 .content {
     display: grid;
     grid-template-columns: 75% 22%;
@@ -98,12 +93,41 @@ article img {
     grid-gap: 20px;
 }
 
+
+article {
+    display: flex;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+article img {
+    width: 30%;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.articleText {
+    padding-left: 20px;
+    width: 70%;
+}
+
+ /* removes bottom margin from last article so articles align with the aside on full width screens */
+.social-media-marketing {
+    margin-bottom: 0;
+}
+
 .benefits {
     width: 100%;
     margin-right:20px;
     padding: 20px;
-    /* height: 100%; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
@@ -116,7 +140,6 @@ article img {
     color: #ffffff;
 }
 
-
 .benefits ul li h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -128,54 +151,40 @@ article img {
     max-width: 150px;
 }
 
-article {
-    margin-bottom: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-article img {
-    max-height: 200px;
-}
-
-
-article h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
 
 /* media queries */
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1003px) {
+     /* Stack the nav menu  */
    nav ul {
     display: flex;
     flex-direction: column;
    }
+
+   nav ul li {
+    padding-bottom: 10px;
+    text-decoration: underline;
+   }
+
+   /* Stack articles section above the aside */
    .content {
     grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
     margin-right: 20px;
    }
    
+   /* Have hero take up less space on smaller screen widths */
    .hero {
     height: 60vh;
    }
 
-   .benefits {
-    display: flex;
-    justify-content: center;
-   }
-
+   /* Have aside list items display in a row */
    .benefits ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -185,6 +194,7 @@ article h2 {
 }
 
 @media screen and (max-width: 812px) {
+    /* stack article content */
     article {
         flex-direction: column;
         justify-content: center;
@@ -199,9 +209,17 @@ article h2 {
         padding-top: 30px;
     }
 
+    /* Reduce h2 font size to fit mobile layout better */
     .articleText h2 {
         font-size: 24px;
     }
+
+    /* return aside to stacked but full width */
+    .benefits {
+        display: flex;
+        justify-content: center;
+    }
+
     .benefits ul {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -210,46 +228,60 @@ article h2 {
 
 }
 @media screen and (max-width: 600px) {
-    .header {
-        flex-direction: column;
-        justify-content: center;
-    }
-
+    /* Class to toggle the display of menu when hamburger icon is clicked */
     .open {
         display: block;
     }
+
+    /* Styles for mobile pop out menu */
     nav ul {
         display: none;
         position: absolute;
         left: 0;
         right: 0;
+        top: 90px;
         width: 100%;
-        background: #d9dcd6;;
+        background: #d9dcd6;
         text-align: right;
         padding-right: 30px;
     }
-    .header nav ul li {
+
+    header nav ul li {
         display: block;
         padding: 10px 0;
         text-decoration: underline;
         color: #000;
     }
+
     nav ul li a{
         color: #000;
     }
+
+    /* Displays hamburger icon */
     .bars {
         display: block;
     }
 
+    /* Adjust articles to full width on mobile */
     article {
         padding: 30px;
     }
+
     article img {
         width: 90%;
     }
     
     .articleText {
      width: 100%;
+    }
+
+    /* Reduce footer size on mobile */
+    footer h2 {
+        font-size: 16px;
+    }
+    
+    footer p {
+        font-size: 12px;
     }
 }
 
