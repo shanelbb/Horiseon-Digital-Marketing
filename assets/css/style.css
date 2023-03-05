@@ -111,12 +111,22 @@ article img {
 
 article h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .articleText {
     padding-left: 20px;
     width: 70%;
+}
+
+.online-reputation-management img {
+    order: 1;
+    
+}
+
+.online-reputation-management .articleText {
+    padding-left: 0;
+    padding-right: 20px;
 }
 
  /* removes bottom margin from last article so articles align with the aside on full width screens */
@@ -212,6 +222,15 @@ footer h2 {
     /* Reduce h2 font size to fit mobile layout better */
     .articleText h2 {
         font-size: 24px;
+    }
+
+    .online-reputation-management img {
+        order: 0;
+    }
+
+    .online-reputation-management .articleText {
+        padding-left: 20px;
+        padding-right: 0;
     }
 
     /* return aside to stacked but full width */
