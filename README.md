@@ -7,15 +7,21 @@
 <div>
 <img src="./assets/images/full-site.png" alt="Screenshot of full webpage"  style="width: 250px;"/> </div>
 
-###Problems Solved:
+### Problems Solved:
 
 - Refactored HTML code to use semantic elements.
 - Refactored CSS to adhere to the DRY code concept.
 - Optimized images for a lighter application and faster page load.
 - Replaced the Float properties with more up to date Flexbox and Grid properties.
 - Added media queries to make the site fully responsive on desktop and mobile.
+- In the header I added a hamburger icon along with a pop out nav menu for screen sizes below 600px. Created a small snippet of JS to create functionality of opening and closing the menu.
 
-- In the header I added a hamburger icon along with a pop out nav menu for screen sizes below 600px.
+### Challenges
+
+- Media queries were not rendering. I discovered that it was due to a missing viewport meta tag.
+- The header links don't always go to the section they are linked to despite having the href attribute pointing to the corresponding ids. The link sometimes has to be pressed several times before going to the correct section. Was unable to fix that bug.
+
+#### Screenshots of responsive layouts
 
 <div>
 <table>
