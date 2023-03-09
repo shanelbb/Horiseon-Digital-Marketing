@@ -1,306 +1,334 @@
 /* Global styles */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
-    background-color: #d9dcd6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #d9dcd6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 p {
-    font-size: 16px;
+  font-size: 1.6rem;
 }
 
-header, footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+header,
+footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-
 
 /* Section Styles */
 
 /* Header bar styles */
 header {
-    padding: 20px;
-    background-color: #2a607c;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  padding: 20px;
+  background-color: #2a607c;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 header h1 {
-    font-size: 48px;
+  font-size: 4.8rem;
 }
 
 /* Gives the SEO in Horiseon a different colour */
 header h1 .seo {
-    color: #abedff;
+  color: #abedff;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    font-size: 18px;
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 1.7rem;
 }
 
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
 
 /* CSS for hamburger menu on mobile. Not displayed until under 600px screen width. */
 .bars {
-    position: absolute;
-    right: 30px;
-    top: 40px;
-    display: none;
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  display: none;
 }
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 5px;
-    background-color: white;
-    border-radius: 5px;
-    margin-bottom: 5px;
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 /* Main section styles */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Webpage content container */
 .content {
-    display: grid;
-    grid-template-columns: 75% 22%;
-    margin-left: 20px;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 75% 22%;
+  margin-left: 20px;
+  grid-gap: 20px;
 }
 
-
 article {
-    display: flex;
-    height: auto;
-    padding: 50px;
-    margin-bottom: 20px;
-    background-color: #0072bb;
-    color: #ffffff;
+  display: flex;
+  height: auto;
+  padding: 50px;
+  margin-bottom: 20px;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
 article img {
-    width: 30%;
-    object-fit: cover;
-    max-height: 200px;
+  width: 192px;
+  max-width: 30%;
+  object-fit: cover;
+  height: 148px;
 }
 
 article h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+  margin-bottom: 20px;
+  font-size: 2.6rem;
 }
 
 .articleText {
-    padding-left: 20px;
-    width: 70%;
+  padding-left: 20px;
+  width: 90%;
 }
 
 .online-reputation-management img {
-    order: 1;
-    
+  order: 1;
 }
 
 .online-reputation-management .articleText {
-    padding-left: 0;
-    padding-right: 20px;
+  padding-left: 0;
+  padding-right: 30px;
 }
 
- /* removes bottom margin from last article so articles align with the aside on full width screens */
+/* removes bottom margin from last article so articles align with the aside on full width screens */
 .social-media-marketing {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .benefits {
-    width: 100%;
-    margin-right:20px;
-    padding: 20px;
-    background-color: #2589bd;
+  width: 100%;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #2589bd;
 }
 
 .benefits ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .benefits ul li {
-    padding: 15px 0;
-    color: #ffffff;
+  padding: 15px 0;
+  color: #ffffff;
 }
 
 .benefits ul li h3 {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .benefits ul li img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
 footer {
-    padding: 30px;
-    text-align: center;
+  padding: 30px;
+  text-align: center;
 }
 
 footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* media queries */
 @media screen and (max-width: 1003px) {
-     /* Stack the nav menu  */
-   nav ul {
+  /* Stack the nav menu  */
+  nav ul {
     display: flex;
     flex-direction: column;
-   }
+  }
 
-   nav ul li {
+  nav ul li {
     padding-bottom: 10px;
     text-decoration: underline;
-   }
+  }
 
-   /* Stack articles section above the aside */
-   .content {
+  /* Stack articles section above the aside */
+  .content {
     grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
     margin-right: 20px;
-   }
-   
-   /* Have hero take up less space on smaller screen widths */
-   .hero {
-    height: 60vh;
-   }
+  }
 
-   /* Have aside list items display in a row */
-   .benefits ul {
+  /* Have hero take up less space on smaller screen widths */
+  .hero {
+    height: 60vh;
+  }
+
+  /* Have aside list items display in a row */
+  .benefits ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
-   }
+  }
 }
 
 @media screen and (max-width: 812px) {
-    /* stack article content */
-    article {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-     article img {
-        width: 75%;
-     }
+  /* stack article content */
+  article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article img {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .articleText {
-        width: 100%;
-        padding-top: 30px;
-    }
+  .articleText {
+    width: 100%;
+    padding-top: 30px;
+  }
 
-    /* Reduce h2 font size to fit mobile layout better */
-    .articleText h2 {
-        font-size: 24px;
-    }
+  /* Reduce h2 font size to fit mobile layout better */
+  .articleText h2 {
+    font-size: 2.4rem;
+  }
 
-    .online-reputation-management img {
-        order: 0;
-    }
+  .online-reputation-management img {
+    order: 0;
+  }
 
-    .online-reputation-management .articleText {
-        padding-left: 20px;
-        padding-right: 0;
-    }
+  .online-reputation-management .articleText {
+    padding-left: 20px;
+    padding-right: 0;
+  }
 
-    /* return aside to stacked but full width */
-    .benefits {
-        display: flex;
-        justify-content: center;
-    }
+  /* return aside to stacked but full width */
+  .benefits {
+    display: flex;
+    justify-content: center;
+  }
 
-    .benefits ul {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        width: 75%;
-    }
-
+  .benefits ul {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 75%;
+  }
 }
+
 @media screen and (max-width: 600px) {
-    /* Class to toggle the display of menu when hamburger icon is clicked */
-    .open {
-        display: block;
-    }
+  /* Class to toggle the display of menu when hamburger icon is clicked */
+  .open {
+    display: block;
+  }
 
-    /* Styles for mobile pop out menu */
-    nav ul {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 90px;
-        width: 100%;
-        background: #d9dcd6;
-        text-align: right;
-        padding-right: 30px;
-    }
+  /* Styles for mobile pop out menu */
+  nav ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    width: 100%;
+    background: #d9dcd6;
+    text-align: right;
+    padding-right: 30px;
+  }
 
-    header nav ul li {
-        display: block;
-        padding: 10px 0;
-        text-decoration: underline;
-        color: #000;
-    }
+  header nav ul li {
+    display: block;
+    padding: 10px 0;
+    text-decoration: underline;
+    color: #000;
+  }
 
-    nav ul li a{
-        color: #000;
-    }
+  nav ul li a {
+    color: #000;
+  }
 
-    /* Displays hamburger icon */
-    .bars {
-        display: block;
-    }
+  /* Displays hamburger icon */
+  .bars {
+    display: block;
+  }
 
-    /* Adjust articles to full width on mobile */
-    article {
-        padding: 30px;
-    }
+  /* Adjust articles to full width on mobile */
+  article {
+    padding: 30px;
+  }
 
-    article img {
-        width: 90%;
-    }
-    
-    .articleText {
-     width: 100%;
-    }
+  article img {
+    width: 90%;
+  }
 
-    /* Reduce footer size on mobile */
-    footer h2 {
-        font-size: 16px;
-    }
-    
-    footer p {
-        font-size: 12px;
-    }
+  .articleText {
+    width: 100%;
+  }
+
+  /* Reduce footer size on mobile */
+  footer h2 {
+    font-size: 1.6rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
 }
 
+@media screen and (max-width: 390px) {
+  header h1 {
+    font-size: 3.6rem;
+  }
+  .bars {
+    right: 20px;
+    top: 30px;
+  }
+  nav ul {
+    padding-right: 10px;
+  }
+  article {
+    padding: 20px;
+  }
+  .articleText,
+  .online-reputation-management .articleText {
+    padding: 20px 10px;
+  }
+}
