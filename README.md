@@ -4,6 +4,8 @@
 
 **A fully responsive and accessible landing page for the digital marketing firm, Horiseon**
 
+Visit Site: https://shanelbb.github.io/Horiseon-Digital-Marketing/
+
 <div>
 <img src="./assets/images/full-site.png" alt="Screenshot of full webpage"  style="width: 250px;"/> </div>
 
